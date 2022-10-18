@@ -1,4 +1,4 @@
-class MovieDetailsPage {
+class MovieDetailsModel {
   bool? adult;
   String? backdropPath;
   dynamic belongsToCollection;
@@ -25,7 +25,7 @@ class MovieDetailsPage {
   double? voteAverage;
   int? voteCount;
 
-  MovieDetailsPage(
+  MovieDetailsModel(
       {this.adult,
       this.backdropPath,
       this.belongsToCollection,
@@ -52,7 +52,7 @@ class MovieDetailsPage {
       this.voteAverage,
       this.voteCount});
 
-  MovieDetailsPage.fromJson(Map<String, dynamic> json) {
+  MovieDetailsModel.fromJson(Map<String, dynamic> json) {
     adult = json['adult'];
     backdropPath = json['backdrop_path'];
     belongsToCollection = json['belongs_to_collection'];

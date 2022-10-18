@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ten_twenty_movie_app/controllers/movies_controller.dart';
@@ -64,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                     size: 35,
                   )
                 : const Icon(
-                    Icons.home_outlined,
+                    Icons.home,
                     color: Colors.white,
                     size: 35,
                   ),
@@ -116,12 +117,12 @@ class _HomePageState extends State<HomePage> {
             },
             icon: pageIndex == 3
                 ? const Icon(
-                    Icons.person,
+                    CupertinoIcons.person,
                     color: Colors.white,
                     size: 35,
                   )
                 : const Icon(
-                    Icons.person_outline,
+                    CupertinoIcons.person,
                     color: Colors.white,
                     size: 35,
                   ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ten_twenty_movie_app/controllers/movies_controller.dart';
 import 'package:ten_twenty_movie_app/http_services/http_services.dart';
+import 'package:ten_twenty_movie_app/movie_details/movie_details_screen.dart';
 import 'package:ten_twenty_movie_app/utlis/app_color.dart';
 
 import '../search_screen/search_bar.dart';
@@ -46,9 +47,9 @@ class WatchScreen extends StatelessWidget {
                 itemBuilder: ((context, index) {
                   return GestureDetector(
                     onTap: () {
-                      HttpService().getMovieDetails(moviesController
-                          .upComingMoviesList[index].id
-                          .toString());
+                      HttpService().getMovieDetails(
+                          moviesController.upComingMoviesList[index].id);
+                      Get.to(MovieDetails());
                     },
                     child: Container(
                       height: MediaQuery.of(context).size.height * 0.20,
