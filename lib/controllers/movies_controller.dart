@@ -14,7 +14,7 @@ class MoviesController extends GetxController {
   void onInit() {
     // TODO: implement onInit
     getUpComingMovies();
-    getMovieDetails(571468);
+    getMovieDetails(3763);
     super.onInit();
   }
 
